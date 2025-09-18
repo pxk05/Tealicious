@@ -1,0 +1,133 @@
+body {
+    background-color: #f9f9f9; 
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px; 
+    margin-right: 200px; /
+}
+
+.contact-form h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    color: #173f35;
+    font-size: 1.5em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 150px; 
+}
+
+.contact-form button {
+    background-color: #173f35;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #173f35;
+}
+
+.contact-info {
+    background-image: url('images/contact.webp');
+    padding-right: 0px;
+    border-radius: 0px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-info h3 {
+    color: #fff;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #fff;
+    font-size: 0.75em;
+    line-height: 1.5em;
+}
+
+
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        margin-right: 0; 
+        margin-bottom: 20px; 
+        padding: 20px; 
+
+    .contact-info {
+        max-width: 100%; 
+        padding: 20px; 
+    }
+
+    .contact-info h3 {
+        font-size: 1.2em; 
+    }
+
+    .contact-info p {
+        font-size: 0.9em; 
+    }
+}
+
+
+@media (max-width: 440px) {
+    .contact-form {
+        padding: 15px; 
+    }
+
+    .contact-form h2 {
+        font-size: 1.3em; 
+    }
+
+    .contact-info {
+        padding: 15px; 
+    }
+
+    .contact-info h3 {
+        font-size: 1.1em; 
+    }
+
+    .contact-info p {
+        font-size: 0.85em;
+    }
+}
+}
